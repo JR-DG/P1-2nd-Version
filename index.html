@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Project 1</title>
+
+  <!-- Materialize CDN -->
+  <!-- Compiled and minified CSS -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  
+  <!-- Compiled and minified JavaScript -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- Icons -->
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+   <!-- Fonts Awesome -->
+
+  <script src="https://kit.fontawesome.com/55233fae23.js" crossorigin="anonymous"></script>
+  
+  <!-- Google Fonts will go here once we know which ones we'll use -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+
+  <link rel="stylesheet" type="text/css" href="./assets/style.css">
+  <link href="./assets/nouislider.min.css" rel="stylesheet">   
+
+  </head>
+
+<body>
+
+  <!-- Navigation Bar -->
+
+    <nav>
+    <div class="nav-wrapper" id="nav-1">
+        <a href="#!" class="material-icons">invert_colors</i></a> 
+      </div>
+  </nav>
+  
+  <!-- 2nd Navigation Bar -->
+
+  <div class="main-container">
+    <div class="nav-wrapper" id="nav-2">
+    <nav>
+      <a href="#!" class="material-icons invert_colors">invert_colors</i></a> 
+      </div>  
+    </nav>
+   
+  <!-- Ticks for the Temperature -->
+  
+  <div class="container"> 
+      <h3 class='h3' id="h31">We Know All The Hotspots</h3>    
+      
+      <div class="row">
+        <div class="col s1 material-icons ac_unit" id="ac">ac_unit</div>
+          <div class="col s1 material-icons brightness_5" id="brightness">brightness_5</div>
+            <div class="col s1 material-icons ac_unit" id="ac">ac_unit</div>
+            <div class="col s1 material-icons brightness_5" id="brightness">brightness_5</div>
+            <div class="col s1 material-icons ac_unit" id="ac">ac_unit</div>
+            <div class="col s1 material-icons brightness_5" id="brightness">brightness_5</div>
+            <div class="col s1 material-icons ac_unit" id="ac">ac_unit</div>
+            <div class="col s1 material-icons brightness_5" id="brightness">brightness_5</div>
+            <div class="col s1 material-icons ac_unit" id="ac">ac_unit</div>
+            <div class="col s1 material-icons brightness_5" id="brightness">brightness_5</div>
+            <div class="col s1 material-icons ac_unit" id="ac">ac_unit</div>
+          <div class="col s1 material-icons brightness_5" id="brightness">brightness_5</div>
+        </div> 
+      <div>
+    <div>   
+
+   <!-- <ul>
+          <a><i class="medium material-icons ac_unit" id="ac">ac_unit</i>   <i class="medium material-icons brightness_5" id="brightness">brightness_5</i></a>
+            <a><i class="material-icons ac_unit" id="ac">ac_unit</i>        <i class="material-icons brightness_5" id="brightness">brightness_5</i></a>
+            <a><i class="large material-icons ac_unit" id="ac">ac_unit</i>   <i class="large material-icons brightness_5" id="brightness">brightness_5</i></a>
+           <a><i class="medium material-icons ac_unit" id="ac">ac_unit</i>  <i class="medium material-icons brightness_5" id="brightness">brightness_5</i></a>
+          <a><i class="material-icons ac_unit" id="ac">ac_unit</i>         <i class="material-icons brightness_5" id="brightness">brightness_5</i></a>
+        <a><i class="large material-icons ac_unit" id="ac">ac_unit</i>   <i class="large material-icons brightness_5" id="brightness">brightness_5</i></a> -->
+  <!-- </ul> --> 
+                                                  
+    <div id="slider">Hot or Cold?</div>
+      <form id="search-site"  action='search' method='get'>
+        <div class="input-group">  
+          <div class="input-field">
+        <input id="search" type="search" name='q'>
+        <label class="label-icon" for="search"></label>
+      <i class="material-icons" >search</i>
+    </div>
+
+    <div> 
+      <button type="submit" class="input-group-addon btn">search</button>
+    </div>         
+              
+ 
+<!-- Split Section of Page -->            
+  
+
+    <div class="container">          
+        <div class="split r">
+            <h1>INDOOR</h1>
+            <a href="#" class="button">EXPLORE</a>
+        </div>
+        
+        <div class="split l">
+            <h1>OUTDOOR</h1>
+            <a href="#" class="button">EXPLORE</a>  
+          </div> 
+        </div>
+    </div>
+
+<!-- Script -->  
+
+  <script>
+	
+  var slider = document.getElementById('slider');
+      noUiSlider.create(slider, {
+      start: [5],
+      step: 1,
+      range: {
+      min: [0],
+      max: [10]
+        }});
+      
+      slider.noUiSlider.on('hover', function( value ){
+        console.log(value);
+      });      
+  </script>
+
+    <script src="./assets/nouislider.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
